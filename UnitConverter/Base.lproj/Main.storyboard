@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,142 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UnitConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3Z-ch-DUc">
+                                <rect key="frame" x="188.5" y="169" width="37" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VXw-ek-Nbd">
+                                <rect key="frame" x="44.5" y="171" width="124" height="68"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wZc-RP-KnT">
+                                        <rect key="frame" x="0.0" y="0.0" width="124" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="8oM-VK-BMb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBm-HE-xfV" customClass="CustomUIButton" customModule="UnitConverter" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44" width="124" height="24"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="MIle" image="chevron.up.chevron.down" catalog="system">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="aex-1c-TTv"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2GT-Xt-zA1">
+                                <rect key="frame" x="245.5" y="171" width="124" height="68"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dx1-5r-mE7">
+                                        <rect key="frame" x="0.0" y="0.0" width="124" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="fq1-3p-mxn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRQ-yN-pnJ" customClass="CustomUIButton" customModule="UnitConverter" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44" width="124" height="24"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="Kilometer" image="chevron.up.chevron.down" catalog="system">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="HU5-7N-RJJ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="124" id="YFT-hQ-ywQ"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2E-kW-und">
+                                <rect key="frame" x="188.5" y="402" width="37" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OVP-I8-Fq9">
+                                <rect key="frame" x="44.5" y="404" width="124" height="68"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eh5-1q-pfO">
+                                        <rect key="frame" x="0.0" y="0.0" width="124" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="FFG-1P-2Dq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvg-BJ-ZnS" customClass="CustomUIButton" customModule="UnitConverter" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44" width="124" height="24"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="Pound" image="chevron.up.chevron.down" catalog="system">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="mQR-bk-VLf"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1eo-pO-c96">
+                                <rect key="frame" x="245.5" y="404" width="124" height="68"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AKc-db-bh8">
+                                        <rect key="frame" x="0.0" y="0.0" width="124" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="ZQD-nR-Du4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U16-Lg-djf" customClass="CustomUIButton" customModule="UnitConverter" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44" width="124" height="24"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="Kilogram" image="chevron.up.chevron.down" catalog="system">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="124" id="6PE-0k-iOx"/>
+                                    <constraint firstAttribute="width" constant="124" id="ipy-dW-OSI"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VXw-ek-Nbd" firstAttribute="centerY" secondItem="y3Z-ch-DUc" secondAttribute="centerY" id="1gl-WO-3ot"/>
+                            <constraint firstItem="O2E-kW-und" firstAttribute="leading" secondItem="OVP-I8-Fq9" secondAttribute="trailing" constant="20" id="KZW-my-3AN"/>
+                            <constraint firstItem="y3Z-ch-DUc" firstAttribute="leading" secondItem="VXw-ek-Nbd" secondAttribute="trailing" constant="20" id="L4h-2F-YsH"/>
+                            <constraint firstItem="OVP-I8-Fq9" firstAttribute="centerY" secondItem="O2E-kW-und" secondAttribute="centerY" id="ccz-Vm-rYQ"/>
+                            <constraint firstItem="y3Z-ch-DUc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fO3-7Z-4fk"/>
+                            <constraint firstItem="y3Z-ch-DUc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="125" id="jfm-2T-YaP"/>
+                            <constraint firstItem="1eo-pO-c96" firstAttribute="centerY" secondItem="O2E-kW-und" secondAttribute="centerY" id="kXE-J7-sL9"/>
+                            <constraint firstItem="2GT-Xt-zA1" firstAttribute="leading" secondItem="y3Z-ch-DUc" secondAttribute="trailing" constant="20" id="pyP-c6-HVH"/>
+                            <constraint firstItem="O2E-kW-und" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qR5-IR-dmk"/>
+                            <constraint firstItem="1eo-pO-c96" firstAttribute="leading" secondItem="O2E-kW-und" secondAttribute="trailing" constant="20" id="skd-rW-oA6"/>
+                            <constraint firstItem="O2E-kW-und" firstAttribute="top" secondItem="y3Z-ch-DUc" secondAttribute="bottom" constant="161" id="vQg-N7-sdi"/>
+                            <constraint firstItem="2GT-Xt-zA1" firstAttribute="centerY" secondItem="y3Z-ch-DUc" secondAttribute="centerY" id="y4V-tz-zlL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chevron.up.chevron.down" catalog="system" width="128" height="128"/>
+    </resources>
 </document>
