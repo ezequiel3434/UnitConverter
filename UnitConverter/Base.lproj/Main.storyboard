@@ -75,13 +75,13 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2E-kW-und">
-                                <rect key="frame" x="188.5" y="402" width="37" height="72"/>
+                                <rect key="frame" x="188.5" y="331" width="37" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OVP-I8-Fq9">
-                                <rect key="frame" x="44.5" y="404" width="124" height="68"/>
+                                <rect key="frame" x="44.5" y="333" width="124" height="68"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eh5-1q-pfO">
                                         <rect key="frame" x="0.0" y="0.0" width="124" height="44"/>
@@ -94,7 +94,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvg-BJ-ZnS" customClass="CustomUIButton" customModule="UnitConverter" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44" width="124" height="24"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                        <state key="normal" title="Pound" image="chevron.up.chevron.down" catalog="system">
+                                        <state key="normal" image="chevron.up.chevron.down" catalog="system">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -107,7 +107,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1eo-pO-c96">
-                                <rect key="frame" x="245.5" y="404" width="124" height="68"/>
+                                <rect key="frame" x="245.5" y="333" width="124" height="68"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AKc-db-bh8">
                                         <rect key="frame" x="0.0" y="0.0" width="124" height="44"/>
@@ -120,7 +120,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U16-Lg-djf" customClass="CustomUIButton" customModule="UnitConverter" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44" width="124" height="24"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                        <state key="normal" title="Kilogram" image="chevron.up.chevron.down" catalog="system">
+                                        <state key="normal" image="chevron.up.chevron.down" catalog="system">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -146,7 +146,7 @@
                             <constraint firstItem="2GT-Xt-zA1" firstAttribute="leading" secondItem="y3Z-ch-DUc" secondAttribute="trailing" constant="20" id="pyP-c6-HVH"/>
                             <constraint firstItem="O2E-kW-und" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qR5-IR-dmk"/>
                             <constraint firstItem="1eo-pO-c96" firstAttribute="leading" secondItem="O2E-kW-und" secondAttribute="trailing" constant="20" id="skd-rW-oA6"/>
-                            <constraint firstItem="O2E-kW-und" firstAttribute="top" secondItem="y3Z-ch-DUc" secondAttribute="bottom" constant="161" id="vQg-N7-sdi"/>
+                            <constraint firstItem="O2E-kW-und" firstAttribute="top" secondItem="y3Z-ch-DUc" secondAttribute="bottom" constant="90" id="vQg-N7-sdi"/>
                             <constraint firstItem="2GT-Xt-zA1" firstAttribute="centerY" secondItem="y3Z-ch-DUc" secondAttribute="centerY" id="y4V-tz-zlL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -156,10 +156,10 @@
                         <outlet property="btn2" destination="HRQ-yN-pnJ" id="7Qb-pW-qwM"/>
                         <outlet property="btn3" destination="cvg-BJ-ZnS" id="IsJ-LN-cv0"/>
                         <outlet property="btn4" destination="U16-Lg-djf" id="me7-n1-Nyy"/>
-                        <outlet property="textField2" destination="dx1-5r-mE7" id="RTw-oy-gZM"/>
-                        <outlet property="txt4Field" destination="AKc-db-bh8" id="hl1-9Q-QMI"/>
                         <outlet property="txtField1" destination="wZc-RP-KnT" id="NZP-Gh-Fid"/>
+                        <outlet property="txtField2" destination="dx1-5r-mE7" id="RTw-oy-gZM"/>
                         <outlet property="txtField3" destination="Eh5-1q-pfO" id="XPE-dM-hbL"/>
+                        <outlet property="txtField4" destination="AKc-db-bh8" id="hl1-9Q-QMI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
