@@ -30,14 +30,17 @@
                                             <constraint firstAttribute="height" constant="44" id="8oM-VK-BMb"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBm-HE-xfV" customClass="CustomUIButton" customModule="UnitConverter" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44" width="124" height="24"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                        <state key="normal" title="MIle" image="chevron.up.chevron.down" catalog="system">
+                                        <state key="normal" image="chevron.up.chevron.down" catalog="system">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnAction1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X9M-4l-IK6"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -53,14 +56,17 @@
                                             <constraint firstAttribute="height" constant="44" id="fq1-3p-mxn"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRQ-yN-pnJ" customClass="CustomUIButton" customModule="UnitConverter" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44" width="124" height="24"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                        <state key="normal" title="Kilometer" image="chevron.up.chevron.down" catalog="system">
+                                        <state key="normal" image="chevron.up.chevron.down" catalog="system">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnAction2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Hp-sj-N01"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -83,7 +89,7 @@
                                             <constraint firstAttribute="height" constant="44" id="FFG-1P-2Dq"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvg-BJ-ZnS" customClass="CustomUIButton" customModule="UnitConverter" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44" width="124" height="24"/>
@@ -91,6 +97,9 @@
                                         <state key="normal" title="Pound" image="chevron.up.chevron.down" catalog="system">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnAction3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cmO-ip-p0h"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -106,7 +115,7 @@
                                             <constraint firstAttribute="height" constant="44" id="ZQD-nR-Du4"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U16-Lg-djf" customClass="CustomUIButton" customModule="UnitConverter" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44" width="124" height="24"/>
@@ -114,6 +123,9 @@
                                         <state key="normal" title="Kilogram" image="chevron.up.chevron.down" catalog="system">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnAction4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vcm-cA-u7I"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -139,6 +151,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="btn1" destination="WBm-HE-xfV" id="ACm-5G-Cjp"/>
+                        <outlet property="btn2" destination="HRQ-yN-pnJ" id="7Qb-pW-qwM"/>
+                        <outlet property="btn3" destination="cvg-BJ-ZnS" id="IsJ-LN-cv0"/>
+                        <outlet property="btn4" destination="U16-Lg-djf" id="me7-n1-Nyy"/>
+                        <outlet property="textField2" destination="dx1-5r-mE7" id="RTw-oy-gZM"/>
+                        <outlet property="txt4Field" destination="AKc-db-bh8" id="hl1-9Q-QMI"/>
+                        <outlet property="txtField1" destination="wZc-RP-KnT" id="NZP-Gh-Fid"/>
+                        <outlet property="txtField3" destination="Eh5-1q-pfO" id="XPE-dM-hbL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
